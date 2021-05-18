@@ -1,0 +1,18 @@
+col=int(input('Введите   количество билетов'))
+dat=[int(input('Введите через интер возраст посетителя для каждого билета')) for i in range(col)]
+print(dat)
+sum=0
+ob_sum=[]
+got=0
+for i in dat:
+    if i<18:
+        ob_sum.append(sum+0)
+    elif 18< i <25:
+        ob_sum.append(sum+990)
+    elif i>25:
+        ob_sum.append(sum+1390)
+for j in ob_sum:
+    got += j
+if col>3:
+    got=got*90/100
+print('Общая сумма заказа', got)
