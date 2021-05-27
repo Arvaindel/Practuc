@@ -1,0 +1,15 @@
+class Clients:
+    def __init__(self, name, balance):
+
+        self.x= name
+        self.y=balance
+
+    def rez(self):
+        return f' Клиент-{self.x}, Баланс- {self.y}'
+
+
+fig=Clients( name='Den', balance=5)
+
+print( fig.rez())
+
+
