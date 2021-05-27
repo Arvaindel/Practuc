@@ -1,0 +1,24 @@
+class Figures:
+    def __init__(self, width, height):
+
+        self.width= width
+        self.height=height
+
+    def get_tupe_figure(self):
+        if self.width==self.height:
+            tupe='square'
+        else:
+            tupe='Rect'
+        return tupe
+
+
+    def rez (self):
+        x=self.width
+        y=self.height
+        return x , y
+
+fig=Figures(5,5)
+fig_2=Figures(56,5)
+print(fig.get_tupe_figure(), fig.rez())
+print(fig_2.get_tupe_figure(), fig_2.rez())
+
